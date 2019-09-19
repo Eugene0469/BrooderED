@@ -7094,18 +7094,18 @@ at 12.06.2012 10:18:08</description>
 <part name="FTDI" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="22PF" device="-PTH-2.54MM-200V-5%" value="0.1uF"/>
-<part name="DHT22_3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="DS18B20_3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="DHT22_4" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="DS18B20_2" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="DHT22_5" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="DS18B20_1" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="10k"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="DHT22_6" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="DS18B20_4" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="DHT22_7" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="DS18B20_5" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="DHT22_8" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
+<part name="DS18B20_6" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -7245,19 +7245,19 @@ at 12.06.2012 10:18:08</description>
 <attribute name="NAME" x="24.384" y="112.141" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="24.384" y="107.061" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="DHT22_3" gate="J$1" x="22.86" y="-2.54" smashed="yes" rot="R90">
+<instance part="DS18B20_3" gate="J$1" x="22.86" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.272" y="-5.08" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="15.24" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="12.7" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="DHT22_4" gate="J$1" x="45.72" y="-2.54" smashed="yes" rot="R90">
+<instance part="DS18B20_2" gate="J$1" x="45.72" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.132" y="-5.08" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="GND19" gate="1" x="38.1" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="35.56" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="DHT22_5" gate="J$1" x="68.58" y="-2.54" smashed="yes" rot="R90">
+<instance part="DS18B20_1" gate="J$1" x="68.58" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.992" y="-5.08" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="R7" gate="G$1" x="76.2" y="15.24" smashed="yes">
@@ -7267,19 +7267,19 @@ at 12.06.2012 10:18:08</description>
 <instance part="GND20" gate="1" x="60.96" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="58.42" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="DHT22_6" gate="J$1" x="-2.54" y="-2.54" smashed="yes" rot="R90">
+<instance part="DS18B20_4" gate="J$1" x="-2.54" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="-8.128" y="-5.08" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="GND21" gate="1" x="-10.16" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-12.7" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="DHT22_7" gate="J$1" x="-25.4" y="-2.54" smashed="yes" rot="R90">
+<instance part="DS18B20_5" gate="J$1" x="-25.4" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="-30.988" y="-5.08" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="GND22" gate="1" x="-33.02" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-35.56" y="12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="DHT22_8" gate="J$1" x="-48.26" y="-2.54" smashed="yes" rot="R90">
+<instance part="DS18B20_6" gate="J$1" x="-48.26" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="-53.848" y="-5.08" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="GND23" gate="1" x="-55.88" y="10.16" smashed="yes" rot="R270">
@@ -7386,43 +7386,43 @@ at 12.06.2012 10:18:08</description>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DHT22_3" gate="J$1" pin="3"/>
+<pinref part="DS18B20_3" gate="J$1" pin="3"/>
 <wire x1="20.32" y1="5.08" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="10.16" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DHT22_4" gate="J$1" pin="3"/>
+<pinref part="DS18B20_2" gate="J$1" pin="3"/>
 <wire x1="43.18" y1="5.08" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="10.16" x2="40.64" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DHT22_5" gate="J$1" pin="3"/>
+<pinref part="DS18B20_1" gate="J$1" pin="3"/>
 <wire x1="66.04" y1="5.08" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="10.16" x2="63.5" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DHT22_6" gate="J$1" pin="3"/>
+<pinref part="DS18B20_4" gate="J$1" pin="3"/>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DHT22_7" gate="J$1" pin="3"/>
+<pinref part="DS18B20_5" gate="J$1" pin="3"/>
 <wire x1="-27.94" y1="5.08" x2="-27.94" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="10.16" x2="-30.48" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DHT22_8" gate="J$1" pin="3"/>
+<pinref part="DS18B20_6" gate="J$1" pin="3"/>
 <wire x1="-50.8" y1="5.08" x2="-50.8" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="12V" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="+"/>
@@ -7430,6 +7430,7 @@ at 12.06.2012 10:18:08</description>
 <pinref part="IC1" gate="1" pin="IN"/>
 <wire x1="-50.8" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-50.8" y="111.76"/>
+<label x="-55.88" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -7512,13 +7513,13 @@ at 12.06.2012 10:18:08</description>
 <label x="142.24" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DHT22_3" gate="J$1" pin="1"/>
+<pinref part="DS18B20_3" gate="J$1" pin="1"/>
 <wire x1="25.4" y1="5.08" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <label x="30.48" y="10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="DHT22_4" gate="J$1" pin="1"/>
+<pinref part="DS18B20_2" gate="J$1" pin="1"/>
 <wire x1="48.26" y1="5.08" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="10.16" x2="53.34" y2="10.16" width="0.1524" layer="91"/>
 <label x="53.34" y="10.16" size="1.778" layer="95" rot="R270"/>
@@ -7529,25 +7530,25 @@ at 12.06.2012 10:18:08</description>
 <label x="83.82" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DHT22_5" gate="J$1" pin="1"/>
+<pinref part="DS18B20_1" gate="J$1" pin="1"/>
 <wire x1="71.12" y1="5.08" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
 <label x="76.2" y="10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="DHT22_6" gate="J$1" pin="1"/>
+<pinref part="DS18B20_4" gate="J$1" pin="1"/>
 <wire x1="0" y1="5.08" x2="0" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="0" y1="10.16" x2="5.08" y2="10.16" width="0.1524" layer="91"/>
 <label x="5.08" y="10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="DHT22_7" gate="J$1" pin="1"/>
+<pinref part="DS18B20_5" gate="J$1" pin="1"/>
 <wire x1="-22.86" y1="5.08" x2="-22.86" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="10.16" x2="-17.78" y2="10.16" width="0.1524" layer="91"/>
 <label x="-17.78" y="10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="DHT22_8" gate="J$1" pin="1"/>
+<pinref part="DS18B20_6" gate="J$1" pin="1"/>
 <wire x1="-45.72" y1="5.08" x2="-45.72" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
 <label x="-40.64" y="10.16" size="1.778" layer="95" rot="R270"/>
@@ -7790,14 +7791,37 @@ at 12.06.2012 10:18:08</description>
 </net>
 <net name="PC0" class="0">
 <segment>
-<pinref part="MICRO_SD" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
-<label x="104.14" y="45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="U1" pin="PC0(ADC0)"/>
 <wire x1="76.2" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
 <label x="83.82" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DS18B20_1" gate="J$1" pin="2"/>
+<wire x1="68.58" y1="5.08" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="15.24" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
+<junction x="68.58" y="15.24"/>
+<label x="68.58" y="20.32" size="1.778" layer="95" rot="R270"/>
+<pinref part="DS18B20_2" gate="J$1" pin="2"/>
+<wire x1="45.72" y1="5.08" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="15.24" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="DS18B20_3" gate="J$1" pin="2"/>
+<wire x1="22.86" y1="5.08" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
+<junction x="45.72" y="15.24"/>
+<pinref part="DS18B20_4" gate="J$1" pin="2"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
+<junction x="22.86" y="15.24"/>
+<pinref part="DS18B20_5" gate="J$1" pin="2"/>
+<wire x1="-25.4" y1="5.08" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="15.24" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-2.54" y="15.24"/>
+<pinref part="DS18B20_6" gate="J$1" pin="2"/>
+<wire x1="-48.26" y1="5.08" x2="-48.26" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="15.24" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-25.4" y="15.24"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -7807,32 +7831,9 @@ at 12.06.2012 10:18:08</description>
 <label x="83.82" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DHT22_5" gate="J$1" pin="2"/>
-<wire x1="68.58" y1="5.08" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="15.24" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
-<junction x="68.58" y="15.24"/>
-<label x="68.58" y="20.32" size="1.778" layer="95" rot="R270"/>
-<pinref part="DHT22_4" gate="J$1" pin="2"/>
-<wire x1="45.72" y1="5.08" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="15.24" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="DHT22_3" gate="J$1" pin="2"/>
-<wire x1="22.86" y1="5.08" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<junction x="45.72" y="15.24"/>
-<pinref part="DHT22_6" gate="J$1" pin="2"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
-<junction x="22.86" y="15.24"/>
-<pinref part="DHT22_7" gate="J$1" pin="2"/>
-<wire x1="-25.4" y1="5.08" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="15.24" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-2.54" y="15.24"/>
-<pinref part="DHT22_8" gate="J$1" pin="2"/>
-<wire x1="-48.26" y1="5.08" x2="-48.26" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="15.24" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-25.4" y="15.24"/>
+<pinref part="MICRO_SD" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<label x="104.14" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
