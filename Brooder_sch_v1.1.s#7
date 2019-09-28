@@ -7800,13 +7800,6 @@ at 12.06.2012 10:18:08</description>
 <label x="83.82" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PC1" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="PC1(ADC1)"/>
-<wire x1="76.2" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
-<label x="83.82" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="PB2" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PB2(SS/OC1B)"/>
@@ -7845,6 +7838,15 @@ at 12.06.2012 10:18:08</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-35.56,107.163,IC1,,,,,"/>
+<approved hash="113,1,-9.83827,92.71,LED1,,,,,"/>
+<approved hash="113,1,-0.835659,76.2,Q1,,,,,"/>
+<approved hash="113,1,155.617,58.2574,1602_LCD,,,,,"/>
+<approved hash="113,1,193.162,60.96,QN1,,,,,"/>
+<approved hash="113,1,114.977,37.9374,MICRO_SD,,,,,"/>
+<approved hash="113,1,155.617,12.5374,FTDI,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

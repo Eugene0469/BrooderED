@@ -2386,6 +2386,18 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="1X2-3.5MM">
+<wire x1="-3.4" y1="3.4" x2="-3.4" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-3.6" x2="3.6" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-3.6" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-2.2" x2="3.6" y2="3.4" width="0.127" layer="21"/>
+<wire x1="3.6" y1="3.4" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-2.2" x2="3.6" y2="-2.2" width="0.127" layer="21"/>
+<pad name="1" x="1.8" y="0" drill="1" diameter="2.1844"/>
+<pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
+<text x="3" y="5" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -2428,6 +2440,14 @@ Source: 008-0260-0_E.pdf</description>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="1X2">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
+<pin name="2" x="-5.08" y="0" visible="pin" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3075,6 +3095,24 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X2" prefix="J">
+<description>3.5mm Terminal block
+&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="1X2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-3.5MM" package="1X2-3.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7107,6 +7145,7 @@ at 12.06.2012 10:18:08</description>
 <part name="DS18B20_6" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J2" library="adafruit" deviceset="1X2" device="-3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -7285,6 +7324,7 @@ at 12.06.2012 10:18:08</description>
 <instance part="GND18" gate="1" x="137.16" y="12.7" smashed="yes">
 <attribute name="VALUE" x="134.62" y="10.16" size="1.778" layer="96"/>
 </instance>
+<instance part="J2" gate="G$1" x="-55.88" y="121.92" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7425,12 +7465,10 @@ at 12.06.2012 10:18:08</description>
 <net name="12V" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="-60.96" y1="111.76" x2="-50.8" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="1" pin="IN"/>
-<wire x1="-50.8" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
-<junction x="-50.8" y="111.76"/>
-<label x="-55.88" y="111.76" size="1.778" layer="95"/>
+<wire x1="-60.96" y1="111.76" x2="-58.42" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="-58.42" y1="111.76" x2="-58.42" y2="116.84" width="0.1524" layer="91"/>
+<label x="-58.42" y="111.76" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -7834,6 +7872,18 @@ at 12.06.2012 10:18:08</description>
 <pinref part="MICRO_SD" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <label x="104.14" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12V_S" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="IC1" gate="1" pin="IN"/>
+<wire x1="-50.8" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="116.84" x2="-55.88" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="111.76" x2="-50.8" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-50.8" y="111.76"/>
+<label x="-55.88" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
