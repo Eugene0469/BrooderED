@@ -7422,7 +7422,7 @@ at 12.06.2012 10:18:08</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="12V" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="+"/>
@@ -7430,6 +7430,7 @@ at 12.06.2012 10:18:08</description>
 <pinref part="IC1" gate="1" pin="IN"/>
 <wire x1="-50.8" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-50.8" y="111.76"/>
+<label x="-55.88" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
