@@ -7092,7 +7092,6 @@ at 12.06.2012 10:18:08</description>
 <part name="MICRO_SD" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FTDI" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
-<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="22PF" device="-PTH-2.54MM-200V-5%" value="0.1uF"/>
 <part name="DS18B20_3" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7107,6 +7106,7 @@ at 12.06.2012 10:18:08</description>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DS18B20_6" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7238,9 +7238,6 @@ at 12.06.2012 10:18:08</description>
 <attribute name="VALUE" x="162.56" y="25.146" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="162.56" y="4.572" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="GND18" gate="1" x="134.62" y="15.24" smashed="yes">
-<attribute name="VALUE" x="132.08" y="12.7" size="1.778" layer="96"/>
-</instance>
 <instance part="C5" gate="G$1" x="22.86" y="109.22" smashed="yes">
 <attribute name="NAME" x="24.384" y="112.141" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="24.384" y="107.061" size="1.778" layer="96" font="vector"/>
@@ -7284,6 +7281,9 @@ at 12.06.2012 10:18:08</description>
 </instance>
 <instance part="GND23" gate="1" x="-55.88" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-58.42" y="12.7" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND18" gate="1" x="137.16" y="12.7" smashed="yes">
+<attribute name="VALUE" x="134.62" y="10.16" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -7380,12 +7380,6 @@ at 12.06.2012 10:18:08</description>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="FTDI" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="20.32" x2="134.62" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="20.32" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="DS18B20_3" gate="J$1" pin="3"/>
 <wire x1="20.32" y1="5.08" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="10.16" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
@@ -7420,6 +7414,12 @@ at 12.06.2012 10:18:08</description>
 <wire x1="-50.8" y1="5.08" x2="-50.8" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="FTDI" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="17.78" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="17.78" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -7508,11 +7508,6 @@ at 12.06.2012 10:18:08</description>
 <label x="104.14" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FTDI" gate="G$1" pin="3"/>
-<wire x1="152.4" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
-<label x="142.24" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="DS18B20_3" gate="J$1" pin="1"/>
 <wire x1="25.4" y1="5.08" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
@@ -7552,6 +7547,11 @@ at 12.06.2012 10:18:08</description>
 <wire x1="-45.72" y1="5.08" x2="-45.72" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
 <label x="-40.64" y="10.16" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="FTDI" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="142.24" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7751,11 +7751,6 @@ at 12.06.2012 10:18:08</description>
 </net>
 <net name="DTR" class="0">
 <segment>
-<pinref part="FTDI" gate="G$1" pin="6"/>
-<wire x1="152.4" y1="7.62" x2="142.24" y2="7.62" width="0.1524" layer="91"/>
-<label x="142.24" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="114.3" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
@@ -7764,29 +7759,34 @@ at 12.06.2012 10:18:08</description>
 <junction x="22.86" y="116.84"/>
 <label x="27.94" y="116.84" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="PD1" class="0">
 <segment>
 <pinref part="FTDI" gate="G$1" pin="5"/>
 <wire x1="152.4" y1="10.16" x2="142.24" y2="10.16" width="0.1524" layer="91"/>
 <label x="142.24" y="10.16" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="PD1" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PD1(TXD)"/>
 <wire x1="76.2" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
 <label x="83.82" y="78.74" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="PD0" class="0">
 <segment>
 <pinref part="FTDI" gate="G$1" pin="4"/>
 <wire x1="152.4" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="142.24" y="12.7" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="PD0" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PD0(RXD)"/>
 <wire x1="76.2" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <label x="83.82" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FTDI" gate="G$1" pin="3"/>
+<wire x1="152.4" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
+<label x="142.24" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC0" class="0">

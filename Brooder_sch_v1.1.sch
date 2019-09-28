@@ -7146,6 +7146,8 @@ at 12.06.2012 10:18:08</description>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J2" library="adafruit" deviceset="1X2" device="-3.5MM"/>
+<part name="DS3231" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7325,6 +7327,13 @@ at 12.06.2012 10:18:08</description>
 <attribute name="VALUE" x="134.62" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="J2" gate="G$1" x="-55.88" y="121.92" rot="R90"/>
+<instance part="DS3231" gate="G$1" x="116.84" y="68.58" smashed="yes" rot="R180">
+<attribute name="VALUE" x="121.92" y="78.486" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="121.92" y="57.912" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="GND24" gate="1" x="106.68" y="53.34" smashed="yes">
+<attribute name="VALUE" x="104.14" y="50.8" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7461,6 +7470,12 @@ at 12.06.2012 10:18:08</description>
 <wire x1="137.16" y1="17.78" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="DS3231" gate="G$1" pin="6"/>
+<wire x1="111.76" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="60.96" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="12V" class="0">
 <segment>
@@ -7590,6 +7605,11 @@ at 12.06.2012 10:18:08</description>
 <pinref part="FTDI" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
 <label x="142.24" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DS3231" gate="G$1" pin="5"/>
+<wire x1="111.76" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
+<label x="104.14" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7884,6 +7904,30 @@ at 12.06.2012 10:18:08</description>
 <wire x1="-55.88" y1="111.76" x2="-50.8" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-50.8" y="111.76"/>
 <label x="-55.88" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PC4" class="0">
+<segment>
+<pinref part="DS3231" gate="G$1" pin="4"/>
+<wire x1="111.76" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
+<label x="104.14" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="PC4(ADC4/SDA)"/>
+<wire x1="76.2" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
+<label x="83.82" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PC5" class="0">
+<segment>
+<pinref part="DS3231" gate="G$1" pin="3"/>
+<wire x1="111.76" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+<label x="104.14" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="PC5(ADC5/SCL)"/>
+<wire x1="76.2" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
+<label x="83.82" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
