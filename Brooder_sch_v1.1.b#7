@@ -483,29 +483,6 @@ Source: DCJ0202.pdf</description>
 </package>
 </packages>
 </library>
-<library name="sym">
-<description>LT-Spice library generated with :&lt;br&gt;
-import-ltspice.ulp&lt;br&gt;
-from: E:/Programme/LTC/LTspiceIV/lib/sym/*.asy&lt;br&gt;
-at 12.06.2012 10:18:08</description>
-<packages>
-<package name="SOT23">
-<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Resistors">
 <description>&lt;h3&gt;SparkFun Resistors&lt;/h3&gt;
 This library contains resistors. Reference designator:R. 
@@ -895,7 +872,6 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1667008" x="26.25" y="36.97" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="26.25" y="36.97" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="QN1" library="sym" package="SOT23" value="" x="14.06" y="59.08"/>
 <element name="R1" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="38.78" y="11.93" rot="R180">
 <attribute name="PROD_ID" value="RES-09327" x="38.78" y="11.93" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -919,6 +895,10 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-09136" x="38.13" y="40.02" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J2" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="8" y="-27"/>
+<element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="9" y="-48">
+<attribute name="PROD_ID" value="RES-09327" x="9" y="-48" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LED2" library="adafruit" package="LED5MM" value="" x="5" y="-66"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -938,7 +918,6 @@ design rules under a new name.</description>
 <contactref element="1602_LCD" pad="16"/>
 <contactref element="1602_LCD" pad="12"/>
 <contactref element="1602_LCD" pad="1"/>
-<contactref element="QN1" pad="1"/>
 <contactref element="MICRO_SD" pad="6"/>
 <contactref element="DS18B20_3" pad="3"/>
 <contactref element="DS18B20_2" pad="3"/>
@@ -990,6 +969,27 @@ design rules under a new name.</description>
 <vertex x="80" y="75"/>
 <vertex x="0" y="75"/>
 </polygon>
+<contactref element="LED2" pad="K"/>
+<wire x1="64.13" y1="56.82" x2="70.01" y2="56.87" width="0" layer="19" extent="1-1"/>
+<wire x1="58.83" y1="56.76" x2="64.13" y2="56.82" width="0" layer="19" extent="1-1"/>
+<wire x1="53.52" y1="56.82" x2="58.83" y2="56.76" width="0" layer="19" extent="1-1"/>
+<wire x1="48.73" y1="56.83" x2="53.52" y2="56.82" width="0" layer="19" extent="1-1"/>
+<wire x1="70.04" y1="40.94" x2="70.01" y2="56.87" width="0" layer="19" extent="1-1"/>
+<wire x1="76.32" y1="36.03" x2="70.04" y2="40.94" width="0" layer="19" extent="1-1"/>
+<wire x1="34.4688" y1="65.2806" x2="48.73" y2="56.83" width="0" layer="19" extent="1-1"/>
+<wire x1="41.94" y1="41.29" x2="48.73" y2="56.83" width="0" layer="19" extent="1-1"/>
+<wire x1="34.32" y1="38.75" x2="41.94" y2="41.29" width="0" layer="19" extent="1-1"/>
+<wire x1="19.71" y1="34.8" x2="19.72" y2="39.62" width="0" layer="19" extent="1-1"/>
+<wire x1="9.4" y1="52.84" x2="20.24" y2="41.49" width="0" layer="19" extent="1-16"/>
+<wire x1="7.61" y1="63.85" x2="13.11" y2="57.98" width="0" layer="19" extent="1-1"/>
+<wire x1="6.77" y1="24.94" x2="19.71" y2="34.8" width="0" layer="19" extent="16-16"/>
+<wire x1="21.14" y1="16.64" x2="6.69" y2="23.87" width="0" layer="19" extent="16-16"/>
+<wire x1="25.06" y1="6.02" x2="21.14" y2="16.64" width="0" layer="19" extent="1-1"/>
+<wire x1="15.98" y1="5.92" x2="25.06" y2="6.02" width="0" layer="19" extent="1-1"/>
+<wire x1="10.75" y1="6.43" x2="15.98" y2="5.92" width="0" layer="19" extent="1-1"/>
+<wire x1="5.95" y1="3.43" x2="10.75" y2="6.43" width="0" layer="19" extent="1-1"/>
+<wire x1="34.98" y1="5.57" x2="25.06" y2="6.02" width="0" layer="19" extent="1-1"/>
+<wire x1="6.27" y1="-66" x2="5.95" y2="3.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="J1" pad="1"/>
@@ -1010,7 +1010,6 @@ design rules under a new name.</description>
 <contactref element="DHT22_2" pad="1"/>
 <contactref element="1602_LCD" pad="15"/>
 <contactref element="1602_LCD" pad="2"/>
-<contactref element="QN1" pad="2"/>
 <contactref element="MICRO_SD" pad="5"/>
 <contactref element="DS18B20_3" pad="1"/>
 <contactref element="DS18B20_2" pad="1"/>
@@ -1158,7 +1157,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="VO">
 <contactref element="1602_LCD" pad="14"/>
-<contactref element="QN1" pad="3"/>
 <wire x1="11.53" y1="60.21" x2="14.09" y2="60.21" width="1.27" layer="16"/>
 <wire x1="14.1" y1="60.21" x2="14.09" y2="60.21" width="1.27" layer="16"/>
 <wire x1="14.09" y1="60.21" x2="14.06" y2="60.18" width="1.27" layer="16"/>
@@ -1336,11 +1334,17 @@ design rules under a new name.</description>
 <wire x1="21.58" y1="8.42" x2="22.52" y2="7.48" width="1.27" layer="16"/>
 <wire x1="15.08" y1="8.42" x2="6.3" y2="-27" width="0" layer="19" extent="16-16"/>
 </signal>
+<signal name="N$1">
+<contactref element="R5" pad="P$1"/>
+<contactref element="LED2" pad="A"/>
+<wire x1="5.19" y1="-48" x2="3.73" y2="-66" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PC1">
+<contactref element="U1" pad="24"/>
+<contactref element="R5" pad="P$2"/>
+<wire x1="12.81" y1="-48" x2="41.94" y2="46.37" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
-<errors>
-<approved hash="19,1,b87fbe25f6c3f099"/>
-<approved hash="19,1,e3eae625cdc3c80c"/>
-</errors>
 </board>
 </drawing>
 <compatibility>

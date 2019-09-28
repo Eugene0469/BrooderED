@@ -900,7 +900,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="5.95" y="6.43" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="5.95" y="6.43" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LED1" library="adafruit" package="LED5MM" value="" x="42.64" y="6.59" rot="R270"/>
+<element name="PWR_LED" library="adafruit" package="LED5MM" value="" x="42.64" y="6.59" rot="R270"/>
 <element name="MICRO_SD" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="76.32" y="23.33" rot="R90">
 <attribute name="PROD_ID" value="CONN-08437" x="76.32" y="23.33" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -936,7 +936,7 @@ design rules under a new name.</description>
 <element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="9" y="-48">
 <attribute name="PROD_ID" value="RES-09327" x="9" y="-48" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LED2" library="adafruit" package="LED5MM" value="" x="5" y="-66"/>
+<element name="TEST_LED" library="adafruit" package="LED5MM" value="" x="5" y="-66"/>
 <element name="R6" library="pot" library_urn="urn:adsk.eagle:library:331" package="RJ6" package3d_urn="urn:adsk.eagle:package:22699/1" value="" x="4" y="-83"/>
 </elements>
 <signals>
@@ -946,7 +946,7 @@ design rules under a new name.</description>
 <contactref element="C1" pad="2"/>
 <contactref element="IC1" pad="GND"/>
 <contactref element="C2" pad="2"/>
-<contactref element="LED1" pad="K"/>
+<contactref element="PWR_LED" pad="K"/>
 <contactref element="S1" pad="1"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C4" pad="2"/>
@@ -1008,7 +1008,7 @@ design rules under a new name.</description>
 <vertex x="80" y="75"/>
 <vertex x="0" y="75"/>
 </polygon>
-<contactref element="LED2" pad="K"/>
+<contactref element="TEST_LED" pad="K"/>
 <contactref element="R6" pad="A"/>
 <wire x1="64.13" y1="56.82" x2="70.01" y2="56.87" width="0" layer="19" extent="1-1"/>
 <wire x1="58.83" y1="56.76" x2="64.13" y2="56.82" width="0" layer="19" extent="1-1"/>
@@ -1151,7 +1151,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$3">
 <contactref element="R1" pad="P$1"/>
-<contactref element="LED1" pad="A"/>
+<contactref element="PWR_LED" pad="A"/>
 <wire x1="42.59" y1="11.93" x2="42.64" y2="11.88" width="1.27" layer="16"/>
 <wire x1="42.64" y1="11.88" x2="42.64" y2="7.86" width="1.27" layer="16"/>
 </signal>
@@ -1381,7 +1381,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="R5" pad="P$1"/>
-<contactref element="LED2" pad="A"/>
+<contactref element="TEST_LED" pad="A"/>
 <wire x1="5.19" y1="-48" x2="3.73" y2="-66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC1">
