@@ -10236,12 +10236,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="83.82" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="7"/>
-<wire x1="119.38" y1="-20.32" x2="106.68" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
