@@ -9310,8 +9310,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DHT22_1" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="dht22_1"/>
 <part name="DHT22_2" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="10k"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="10k"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="1602_LCD" library="SparkFun-Connectors" deviceset="CONN_16" device="1X16_NO_SILK"/>
@@ -9402,14 +9400,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </instance>
 <instance part="DHT22_2" gate="J$1" x="160.02" y="96.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="162.56" y="90.932" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="R3" gate="G$1" x="101.6" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="100.076" y="104.14" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="103.124" y="104.14" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R4" gate="G$1" x="142.24" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.716" y="104.14" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="143.764" y="104.14" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="GND10" gate="1" x="106.68" y="88.9" smashed="yes">
 <attribute name="VALUE" x="104.14" y="86.36" size="1.778" layer="96"/>
@@ -9644,20 +9634,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="22.86" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="109.22" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
-<label x="101.6" y="111.76" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="DHT22_1" gate="J$1" pin="1"/>
 <wire x1="111.76" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="99.06" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <label x="106.68" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="109.22" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
-<label x="142.24" y="111.76" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="DHT22_2" gate="J$1" pin="1"/>
@@ -9848,11 +9828,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="DHT22_2" gate="J$1" pin="2"/>
-<wire x1="152.4" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="96.52" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
-<junction x="142.24" y="96.52"/>
+<wire x1="152.4" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <label x="137.16" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -9864,11 +9840,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="DHT22_1" gate="J$1" pin="2"/>
-<wire x1="111.76" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="99.06" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-<junction x="101.6" y="96.52"/>
+<wire x1="111.76" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
 <label x="91.44" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
