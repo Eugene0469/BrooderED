@@ -1163,10 +1163,6 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-09136" x="38.13" y="40.02" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J2" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="69.84" y="69.63"/>
-<element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="45" y="43" rot="R90">
-<attribute name="PROD_ID" value="RES-09327" x="45" y="43" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="TEST_LED" library="adafruit" package="LED5MM" value="" x="49.57" y="38.99"/>
 <element name="DS3231" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="49.13" y="61.27">
 <attribute name="PROD_ID" value="CONN-08437" x="49.13" y="61.27" size="1.778" layer="27" display="off"/>
 </element>
@@ -1229,7 +1225,6 @@ design rules under a new name.</description>
 <wire x1="27.41" y1="41.49" x2="20.24" y2="41.49" width="1.27" layer="16"/>
 <wire x1="20.24" y1="41.49" x2="19.72" y2="40.97" width="1.27" layer="16"/>
 <contactref element="FTDI" pad="2"/>
-<contactref element="TEST_LED" pad="K"/>
 <contactref element="DS3231" pad="6"/>
 <wire x1="4.31" y1="63.03" x2="14.31" y2="63.03" width="1.27" layer="1"/>
 <wire x1="14.31" y1="63.03" x2="14.87" y2="63.59" width="1.27" layer="1"/>
@@ -1328,9 +1323,7 @@ design rules under a new name.</description>
 <wire x1="4.31" y1="24.93" x2="3.8" y2="24.42" width="1.27" layer="1"/>
 <wire x1="3.8" y1="24.42" x2="3.05" y2="24.42" width="1.27" layer="1"/>
 <wire x1="41.94" y1="41.29" x2="50.07" y2="41.29" width="1.27" layer="16"/>
-<wire x1="50.84" y1="40.52" x2="50.84" y2="38.99" width="1.27" layer="16"/>
 <wire x1="50.07" y1="41.29" x2="50.84" y2="40.52" width="1.27" layer="16"/>
-<wire x1="50.84" y1="38.99" x2="53.69" y2="38.99" width="1.27" layer="16"/>
 <wire x1="53.69" y1="38.99" x2="54.65" y2="38.99" width="1.27" layer="16"/>
 <wire x1="54.65" y1="38.99" x2="55.66" y2="40" width="1.27" layer="16"/>
 <wire x1="46" y1="3.75" x2="53.98" y2="3.75" width="1.27" layer="16"/>
@@ -1365,6 +1358,7 @@ design rules under a new name.</description>
 <wire x1="15.02" y1="66.32" x2="34.4888" y2="66.7906" width="0" layer="19" extent="1-1"/>
 <wire x1="5" y1="7" x2="4.19" y2="14.85" width="0" layer="19" extent="16-16"/>
 <wire x1="20.24" y1="41.49" x2="13.87" y2="52.87" width="0" layer="19" extent="1-16"/>
+<wire x1="53.69" y1="38.99" x2="50.84" y2="40.52" width="0" layer="19" extent="16-16"/>
 <wire x1="19.71" y1="34.8" x2="19.72" y2="39.62" width="0" layer="19" extent="1-1"/>
 <wire x1="1.4" y1="-82.36" x2="13" y2="2" width="0" layer="19" extent="16-16"/>
 </signal>
@@ -1665,17 +1659,9 @@ design rules under a new name.</description>
 <wire x1="26" y1="5.25" x2="33.25" y2="5.25" width="1.27" layer="16"/>
 <wire x1="33.25" y1="5.25" x2="33.46" y2="5.46" width="1.27" layer="16"/>
 </signal>
-<signal name="N$1">
-<contactref element="R5" pad="P$1"/>
-<contactref element="TEST_LED" pad="A"/>
-<wire x1="45" y1="39.19" x2="48.1" y2="39.19" width="1.27" layer="16"/>
-<wire x1="48.1" y1="39.19" x2="48.3" y2="38.99" width="1.27" layer="16"/>
-</signal>
 <signal name="PC1">
 <contactref element="U1" pad="24"/>
-<contactref element="R5" pad="P$2"/>
 <wire x1="41.94" y1="46.37" x2="42.38" y2="46.81" width="1.27" layer="16"/>
-<wire x1="42.38" y1="46.81" x2="45" y2="46.81" width="1.27" layer="16"/>
 <contactref element="R6" pad="P$2"/>
 <wire x1="11.81" y1="-66.35" x2="41.94" y2="46.37" width="0" layer="19" extent="1-1"/>
 </signal>
