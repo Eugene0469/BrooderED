@@ -1201,6 +1201,9 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-09327" x="8" y="-118.69" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED2" library="adafruit" package="LED5MM" value="" x="30.86" y="-65.34"/>
+<element name="PWR/LOAD1" library="SparkFun-Connectors" package="SCREWTERMINAL-5MM-2" value="" x="4.96" y="-99.13">
+<attribute name="SF_SKU" value="PRT-08432" x="4.96" y="-99.13" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1845,10 +1848,15 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="SWCLOSED"/>
 <wire x1="33.04" y1="-21.72" x2="15.84" y2="-30.6" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$14">
+<signal name="N$1">
+<contactref element="PWR/LOAD1" pad="2"/>
 <contactref element="U$1" pad="SWCOMMON"/>
+<wire x1="1.84" y1="-24.6" x2="9.96" y2="-99.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
 <contactref element="PWR/LOAD" pad="2"/>
-<wire x1="38.04" y1="-21.72" x2="1.84" y2="-24.6" width="0" layer="19" extent="1-1"/>
+<contactref element="PWR/LOAD1" pad="1"/>
+<wire x1="38.04" y1="-21.72" x2="4.96" y2="-99.13" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
