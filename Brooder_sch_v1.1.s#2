@@ -8803,36 +8803,82 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="TPOT" urn="urn:adsk.eagle:symbol:22626/1" library_version="1">
-<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
-<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<symbol name="POT_US-" urn="urn:adsk.eagle:symbol:22671/1" library_version="1">
+<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
+<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="2.032" y1="-4.699" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.667" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<text x="-5.08" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TRIM_EU-" urn="urn:adsk.eagle:component:22743/1" prefix="R" uservalue="yes" library_version="1">
+<deviceset name="TRIM_US-" urn="urn:adsk.eagle:component:22744/1" prefix="R" uservalue="yes" library_version="1">
 <description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;</description>
 <gates>
-<gate name="1" symbol="TPOT" x="0" y="0"/>
+<gate name="G$1" symbol="POT_US-" x="2.54" y="0"/>
 </gates>
 <devices>
+<device name="PT-10" package="PT-10">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22715/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PT-10S" package="PT-10S">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22711/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PT-SPIN" package="PT-SPIN">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22713/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="B25P" package="B25P">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22684/1"/>
@@ -8843,9 +8889,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="B25U" package="B25U">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22685/1"/>
@@ -8856,9 +8902,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="B25V" package="B25V">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22683/1"/>
@@ -8869,9 +8915,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="B25X" package="B25X">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22687/1"/>
@@ -8882,9 +8928,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="B64W" package="B64W">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22686/1"/>
@@ -8895,9 +8941,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="B64Y" package="B64Y">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22690/1"/>
@@ -8908,9 +8954,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="B90P" package="SP19L">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22714/1"/>
@@ -8921,9 +8967,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CA6H" package="CA6H">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22689/1"/>
@@ -8934,9 +8980,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CA6V" package="CA6V">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22691/1"/>
@@ -8947,9 +8993,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CA9H" package="CA9H">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22694/1"/>
@@ -8960,9 +9006,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CA9V" package="CA9V">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22698/1"/>
@@ -8973,9 +9019,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CA14V" package="CA14V">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22695/1"/>
@@ -8986,9 +9032,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CA14H" package="CA14H">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22700/1"/>
@@ -8999,9 +9045,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CT6" package="CT6">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22692/1"/>
@@ -9012,9 +9058,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="ECP10P" package="ECP10P">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22693/1"/>
@@ -9025,9 +9071,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="ECP10S" package="ECP10S">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22696/1"/>
@@ -9038,9 +9084,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="LI10" package="LI10">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22704/1"/>
@@ -9051,9 +9097,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="LI15" package="LI15">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22706/1"/>
@@ -9064,9 +9110,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="RJ6" package="RJ6">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22699/1"/>
@@ -9077,9 +9123,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="RJ6S" package="RJ6S">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22697/1"/>
@@ -9090,9 +9136,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="RJ9W" package="RJ9W">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22702/1"/>
@@ -9103,9 +9149,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="RS3" package="RS3">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22701/1"/>
@@ -9116,9 +9162,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S43P" package="SP19L">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22714/1"/>
@@ -9129,9 +9175,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S63P" package="S63P">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22705/1"/>
@@ -9142,9 +9188,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S63S" package="S63S">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22703/1"/>
@@ -9155,9 +9201,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S63X" package="S63X">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22725/1"/>
@@ -9168,9 +9214,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S64W" package="S64W">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22708/1"/>
@@ -9181,9 +9227,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S64Y" package="S64Y">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22709/1"/>
@@ -9194,9 +9240,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S75H" package="S75H">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22707/1"/>
@@ -9207,9 +9253,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="S75P" package="S75P">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22712/1"/>
@@ -9220,9 +9266,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="SP19L" package="SP19L">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22714/1"/>
@@ -9233,9 +9279,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="ST10" package="ST10">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22737/1"/>
@@ -9246,9 +9292,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="ST15" package="ST15">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22719/1"/>
@@ -9259,9 +9305,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="T189" package="SP19LKN">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22710/1"/>
@@ -9272,9 +9318,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="PT10" package="PT-10">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22715/1"/>
@@ -9285,9 +9331,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="PT10S" package="PT-10S">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22711/1"/>
@@ -9298,9 +9344,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="PTSPIN" package="PT-SPIN">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22713/1"/>
@@ -9311,9 +9357,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CIP20C-4MM" package="CIP20C-4MM">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22718/1"/>
@@ -9324,9 +9370,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="CIP20C-6MM" package="CIP20C-6MM">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="E" pad="E"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22723/1"/>
@@ -9337,9 +9383,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="SM-42/43A" package="SM-42/43A">
 <connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22716/1"/>
@@ -9348,37 +9394,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SM-42/43B" package="SM-42/43B">
-<connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22717/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SM-42/43W" package="SM-42/43W">
-<connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22721/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="SM-42/43X" package="SM-42/43X">
 <connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22720/1"/>
@@ -9387,11 +9407,37 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SM-42/43W" package="SM-42/43W">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22721/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM-42/43B" package="SM-42/43B">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22717/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="3223G" package="3223G">
 <connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22722/1"/>
@@ -9402,9 +9448,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="3223J" package="3223J">
 <connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22724/1"/>
@@ -9415,9 +9461,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </device>
 <device name="3223W" package="3223W">
 <connects>
-<connect gate="1" pin="A" pad="1"/>
-<connect gate="1" pin="E" pad="3"/>
-<connect gate="1" pin="S" pad="2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22735/1"/>
@@ -9790,8 +9836,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R5" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="220"/>
 <part name="TEST_LED" library="adafruit" deviceset="LED" device="5MM"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_EU-" device="RJ6" package3d_urn="urn:adsk.eagle:package:22699/1"/>
-<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DS3231" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$2" library="LM2596_BREAKOUT_BOARD" deviceset="LM2596_BREAKOUT_BOARD" device="THROUGH_HOLE"/>
@@ -9808,6 +9852,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J4" library="adafruit" deviceset="1X2" device="-3.5MM"/>
+<part name="R1" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="CT6" package3d_urn="urn:adsk.eagle:package:22692/1"/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9931,10 +9977,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="GND16" gate="1" x="124.46" y="12.7" smashed="yes">
 <attribute name="VALUE" x="121.92" y="10.16" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="1" x="177.8" y="58.42"/>
-<instance part="GND24" gate="1" x="177.8" y="48.26" smashed="yes">
-<attribute name="VALUE" x="175.26" y="45.72" size="1.778" layer="96"/>
-</instance>
 <instance part="DS3231" gate="G$1" x="114.3" y="71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="119.38" y="81.026" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="119.38" y="60.452" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -9984,6 +10026,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="VALUE" x="-17.78" y="33.02" size="1.778" layer="96"/>
 </instance>
 <instance part="J4" gate="G$1" x="-60.96" y="71.12" rot="R90"/>
+<instance part="R1" gate="G$1" x="195.58" y="58.42"/>
+<instance part="GND21" gate="1" x="195.58" y="43.18" smashed="yes">
+<attribute name="VALUE" x="193.04" y="40.64" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10086,11 +10132,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="119.38" y1="15.24" x2="124.46" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R6" gate="1" pin="A"/>
-<wire x1="177.8" y1="53.34" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="DS3231" gate="G$1" pin="6"/>
 <wire x1="109.22" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="63.5" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
@@ -10133,6 +10174,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="-15.24" y1="40.64" x2="-15.24" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="A"/>
+<wire x1="195.58" y1="50.8" x2="195.58" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -10214,11 +10260,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="142.24" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R6" gate="1" pin="E"/>
-<wire x1="177.8" y1="63.5" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
-<label x="177.8" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="DS3231" gate="G$1" pin="5"/>
 <wire x1="109.22" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="101.6" y="66.04" size="1.778" layer="95"/>
@@ -10239,6 +10280,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <junction x="-15.24" y="63.5"/>
 <wire x1="-10.16" y1="63.5" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
 <label x="-10.16" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="E"/>
+<wire x1="195.58" y1="66.04" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
+<label x="195.58" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -10308,9 +10354,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="147.32" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R6" gate="1" pin="S"/>
-<wire x1="182.88" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
-<label x="185.42" y="58.42" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="S"/>
+<wire x1="200.66" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
+<label x="203.2" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD2" class="0">
