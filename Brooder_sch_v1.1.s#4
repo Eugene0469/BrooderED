@@ -11059,12 +11059,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="U$1" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
 <part name="D1" library="adafruit" deviceset="1N4004" device="" value="1N4007"/>
 <part name="T1" library="adafruit" deviceset="2N2222" device=""/>
-<part name="PWR/LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
+<part name="PWR" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="220"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="1k"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="5MM"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PWR/LOAD1" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
+<part name="LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -11243,7 +11243,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="-55.88" y="-25.4" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-55.88" y="-27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="PWR/LOAD" gate="G$1" x="7.62" y="0" smashed="yes" rot="R180">
+<instance part="PWR" gate="G$1" x="7.62" y="0" smashed="yes" rot="R180">
 <attribute name="VALUE" x="10.16" y="4.826" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="10.16" y="-5.588" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
@@ -11262,7 +11262,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="GND22" gate="1" x="-43.18" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="-45.72" y="-45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="PWR/LOAD1" gate="G$1" x="7.62" y="-15.24" smashed="yes" rot="R180">
+<instance part="LOAD" gate="G$1" x="7.62" y="-15.24" smashed="yes" rot="R180">
 <attribute name="VALUE" x="10.16" y="-10.414" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="10.16" y="-20.828" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
@@ -11966,14 +11966,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="PWR/LOAD" gate="G$1" pin="1"/>
+<pinref part="PWR" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SWCLOSE"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="PWR/LOAD1" gate="G$1" pin="2"/>
+<pinref part="LOAD" gate="G$1" pin="2"/>
 <wire x1="0" y1="-17.78" x2="-12.7" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-17.78" x2="-12.7" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SWCOMMON"/>
@@ -11982,10 +11982,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="PWR/LOAD" gate="G$1" pin="2"/>
+<pinref part="PWR" gate="G$1" pin="2"/>
 <wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="PWR/LOAD1" gate="G$1" pin="1"/>
+<pinref part="LOAD" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>

@@ -11037,9 +11037,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J2" library="adafruit" deviceset="1X2" device="-3.5MM"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="220"/>
-<part name="TEST_LED" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DS3231" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$2" library="LM2596_BREAKOUT_BOARD" deviceset="LM2596_BREAKOUT_BOARD" device="THROUGH_HOLE"/>
@@ -11179,17 +11176,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="VALUE" x="134.62" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="J2" gate="G$1" x="-55.88" y="121.92" rot="R90"/>
-<instance part="R5" gate="G$1" x="104.14" y="15.24" smashed="yes" rot="R180">
-<attribute name="NAME" x="104.14" y="13.716" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="104.14" y="16.764" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
-</instance>
-<instance part="TEST_LED" gate="G$1" x="114.3" y="15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="118.872" y="18.796" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="118.872" y="20.955" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND16" gate="1" x="124.46" y="12.7" smashed="yes">
-<attribute name="VALUE" x="121.92" y="10.16" size="1.778" layer="96"/>
-</instance>
 <instance part="DS3231" gate="G$1" x="114.3" y="71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="119.38" y="81.026" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="119.38" y="60.452" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -11370,11 +11356,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="152.4" y1="17.78" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="17.78" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="TEST_LED" gate="G$1" pin="C"/>
-<pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="119.38" y1="15.24" x2="124.46" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DS3231" gate="G$1" pin="6"/>
@@ -11766,23 +11747,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="-60.96" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="TEST_LED" gate="G$1" pin="A"/>
-<wire x1="109.22" y1="15.24" x2="111.76" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PC1" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PC1(ADC1)"/>
 <wire x1="76.2" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <label x="83.82" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="15.24" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
-<label x="93.98" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
