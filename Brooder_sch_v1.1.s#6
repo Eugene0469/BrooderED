@@ -10995,6 +10995,174 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diy-modules-1.8.0">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;
+&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
+&lt;/center&gt;</description>
+<packages>
+<package name="RTC-DS3231-AT24C32">
+<description>&lt;b&gt;RTC Module with Battery and EEPROM&lt;/b&gt; based on &lt;b&gt;DS3231&lt;/b&gt; and &lt;b&gt;AT24C32&lt;/b&gt; chips</description>
+<wire x1="-19.304" y1="11.684" x2="19.304" y2="11.684" width="0.127" layer="21"/>
+<wire x1="19.05" y1="4.445" x2="19.05" y2="3.175" width="0.127" layer="21"/>
+<wire x1="19.05" y1="1.905" x2="19.05" y2="0.635" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-0.635" x2="19.05" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-3.175" x2="19.05" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="19.304" y1="-11.684" x2="-19.304" y2="-11.684" width="0.127" layer="21"/>
+<hole x="-11.43" y="-9.525" drill="2.2"/>
+<hole x="-11.43" y="9.525" drill="2.2"/>
+<pad name="J1.1" x="-17.78" y="6.35" drill="1" shape="square"/>
+<pad name="J1.2" x="-17.78" y="3.81" drill="1"/>
+<pad name="J1.3" x="-17.78" y="1.27" drill="1"/>
+<pad name="J1.4" x="-17.78" y="-1.27" drill="1"/>
+<pad name="J1.5" x="-17.78" y="-3.81" drill="1"/>
+<pad name="J2.1" x="17.78" y="3.81" drill="1" shape="square"/>
+<pad name="J2.2" x="17.78" y="1.27" drill="1"/>
+<pad name="J2.3" x="17.78" y="-1.27" drill="1"/>
+<pad name="J2.4" x="17.78" y="-3.81" drill="1"/>
+<text x="0" y="12.7" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-12.7" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<pad name="J1.6" x="-17.78" y="-6.35" drill="1"/>
+<hole x="15.24" y="9.525" drill="2.2"/>
+<wire x1="-19.05" y1="-6.985" x2="-19.05" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-4.445" x2="-19.05" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-1.905" x2="-19.05" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="0.635" x2="-19.05" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="3.175" x2="-19.05" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="5.715" x2="-19.05" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="6.985" x2="-18.415" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="7.62" x2="-17.145" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="7.62" x2="-16.51" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="6.985" x2="-16.51" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="5.715" x2="-17.145" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="5.08" x2="-16.51" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="4.445" x2="-16.51" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="3.175" x2="-17.145" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="2.54" x2="-16.51" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="1.905" x2="-16.51" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="0.635" x2="-17.145" y2="0" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="0" x2="-16.51" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-0.635" x2="-16.51" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-1.905" x2="-17.145" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-2.54" x2="-16.51" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-3.175" x2="-16.51" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-4.445" x2="-17.145" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-5.08" x2="-16.51" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-5.715" x2="-16.51" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-6.985" x2="-17.145" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-7.62" x2="-18.415" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="-7.62" x2="-19.05" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-5.715" x2="-18.415" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="-5.08" x2="-19.05" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-3.175" x2="-18.415" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="-2.54" x2="-19.05" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-0.635" x2="-18.415" y2="0" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="0" x2="-19.05" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="1.905" x2="-18.415" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="2.54" x2="-19.05" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="4.445" x2="-18.415" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="5.08" x2="-19.05" y2="5.715" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-4.445" x2="18.415" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-5.08" x2="17.145" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="17.145" y1="-5.08" x2="16.51" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-4.445" x2="16.51" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-3.175" x2="17.145" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="17.145" y1="-2.54" x2="16.51" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-1.905" x2="16.51" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-0.635" x2="17.145" y2="0" width="0.127" layer="21"/>
+<wire x1="17.145" y1="0" x2="16.51" y2="0.635" width="0.127" layer="21"/>
+<wire x1="16.51" y1="0.635" x2="16.51" y2="1.905" width="0.127" layer="21"/>
+<wire x1="16.51" y1="1.905" x2="17.145" y2="2.54" width="0.127" layer="21"/>
+<wire x1="17.145" y1="2.54" x2="16.51" y2="3.175" width="0.127" layer="21"/>
+<wire x1="16.51" y1="3.175" x2="16.51" y2="4.445" width="0.127" layer="21"/>
+<wire x1="16.51" y1="4.445" x2="17.145" y2="5.08" width="0.127" layer="21"/>
+<wire x1="17.145" y1="5.08" x2="18.415" y2="5.08" width="0.127" layer="21"/>
+<wire x1="18.415" y1="5.08" x2="19.05" y2="4.445" width="0.127" layer="21"/>
+<wire x1="19.05" y1="3.175" x2="18.415" y2="2.54" width="0.127" layer="21"/>
+<wire x1="18.415" y1="2.54" x2="19.05" y2="1.905" width="0.127" layer="21"/>
+<wire x1="19.05" y1="0.635" x2="18.415" y2="0" width="0.127" layer="21"/>
+<wire x1="18.415" y1="0" x2="19.05" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-1.905" x2="18.415" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-2.54" x2="19.05" y2="-3.175" width="0.127" layer="21"/>
+<text x="-15.875" y="6.35" size="1.27" layer="21" align="center-left">32K</text>
+<text x="-15.875" y="3.81" size="1.27" layer="21" align="center-left">SQW</text>
+<text x="-15.875" y="1.27" size="1.27" layer="21" align="center-left">SCL</text>
+<text x="-15.875" y="-1.27" size="1.27" layer="21" align="center-left">SDA</text>
+<text x="-15.875" y="-3.81" size="1.27" layer="21" align="center-left">VCC</text>
+<text x="-15.875" y="-6.35" size="1.27" layer="21" align="center-left">GND</text>
+<text x="15.875" y="3.81" size="1.27" layer="21" align="center-right">SCL</text>
+<text x="15.875" y="1.27" size="1.27" layer="21" align="center-right">SDA</text>
+<text x="15.875" y="-1.27" size="1.27" layer="21" align="center-right">VCC</text>
+<text x="15.875" y="-3.81" size="1.27" layer="21" align="center-right">GND</text>
+<wire x1="-19.304" y1="11.684" x2="-19.304" y2="-11.684" width="0.127" layer="21"/>
+<wire x1="19.304" y1="11.684" x2="19.304" y2="-11.684" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RTC-DS3231-AT24C32">
+<description>&lt;b&gt;RTC Module with Battery and EEPROM&lt;/b&gt; based on &lt;b&gt;DS3231&lt;/b&gt; and &lt;b&gt;AT24C32&lt;/b&gt; chips</description>
+<pin name="VCC.1" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
+<pin name="SDA.1" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCL.1" x="-17.78" y="0" length="middle"/>
+<pin name="SQW" x="-17.78" y="2.54" length="middle"/>
+<pin name="32K" x="-17.78" y="5.08" length="middle"/>
+<pin name="GND.2" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC.2" x="17.78" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA.2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SCL.2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND.1" x="-17.78" y="-7.62" length="middle" direction="pwr"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RTC-DS3231-AT24C32">
+<description>&lt;b&gt;RTC Module with Battery and EEPROM&lt;/b&gt; based on &lt;b&gt;DS3231&lt;/b&gt; and &lt;b&gt;AT24C32&lt;/b&gt; chips
+&lt;p&gt;Tutorial can be found here:&lt;br /&gt;
+&lt;a href="https://edwardmallon.wordpress.com/2014/05/21/using-a-cheap-3-ds3231-rtc-at24c32-eeprom-from-ebay/"&gt;https://edwardmallon.wordpress.com/2014/05/21/using-a-cheap-3-ds3231-rtc-at24c32-eeprom-from-ebay/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/DS3231+AT24C32+module"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=RTC-DS3231-AT24C32"&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RTC-DS3231-AT24C32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RTC-DS3231-AT24C32">
+<connects>
+<connect gate="G$1" pin="32K" pad="J1.1"/>
+<connect gate="G$1" pin="GND.1" pad="J1.6"/>
+<connect gate="G$1" pin="GND.2" pad="J2.4"/>
+<connect gate="G$1" pin="SCL.1" pad="J1.3"/>
+<connect gate="G$1" pin="SCL.2" pad="J2.1"/>
+<connect gate="G$1" pin="SDA.1" pad="J1.4"/>
+<connect gate="G$1" pin="SDA.2" pad="J2.2"/>
+<connect gate="G$1" pin="SQW" pad="J1.2"/>
+<connect gate="G$1" pin="VCC.1" pad="J1.5"/>
+<connect gate="G$1" pin="VCC.2" pad="J2.3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11059,11 +11227,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="U$1" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
 <part name="D1" library="adafruit" deviceset="1N4004" device="" value="1N4007"/>
 <part name="T1" library="adafruit" deviceset="2N2222" device=""/>
-<part name="PWR/LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
+<part name="PWR" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="220"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="10MOHM" device="-HORIZ-1/4W-5%" value="1k"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="5MM"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
+<part name="U$3" library="diy-modules-1.8.0" deviceset="RTC-DS3231-AT24C32" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11242,7 +11412,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="-55.88" y="-25.4" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-55.88" y="-27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="PWR/LOAD" gate="G$1" x="7.62" y="0" smashed="yes" rot="R180">
+<instance part="PWR" gate="G$1" x="7.62" y="0" smashed="yes" rot="R180">
 <attribute name="VALUE" x="10.16" y="4.826" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="10.16" y="-5.588" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
@@ -11261,6 +11431,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="GND22" gate="1" x="-43.18" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="-45.72" y="-45.72" size="1.778" layer="96"/>
 </instance>
+<instance part="LOAD" gate="G$1" x="7.62" y="-15.24" smashed="yes" rot="R180">
+<attribute name="VALUE" x="10.16" y="-10.414" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="10.16" y="-20.828" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="U$3" gate="G$1" x="38.1" y="-48.26"/>
 </instances>
 <busses>
 </busses>
@@ -11961,18 +12136,27 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="PWR/LOAD" gate="G$1" pin="1"/>
+<pinref part="PWR" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SWCLOSE"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="N$1" class="0">
 <segment>
+<pinref part="LOAD" gate="G$1" pin="2"/>
+<wire x1="0" y1="-17.78" x2="-12.7" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SWCOMMON"/>
-<pinref part="PWR/LOAD" gate="G$1" pin="2"/>
-<wire x1="0" y1="-2.54" x2="-10.16" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-5.08" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-5.08" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="PWR" gate="G$1" pin="2"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="LOAD" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
