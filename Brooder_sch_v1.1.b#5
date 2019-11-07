@@ -1158,7 +1158,7 @@ design rules under a new name.</description>
 <element name="12V_GSM" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="93.75" y="79.74" rot="R270"/>
 <element name="U$4" library="custom_libraries" package="20*4_LCD" value="" x="99.42" y="-21.18" rot="R90"/>
 <element name="U$5" library="custom_libraries" package="SD_CARD_MODULE" value="SD_CARD_MODULE" x="68.29" y="-21.3" rot="R90"/>
-<element name="JP2" library="pinhead" package="1X04" value="" x="2.62" y="-30.79"/>
+<element name="JP2" library="pinhead" package="1X04" value="" x="47.97" y="38.6"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1210,7 +1210,7 @@ design rules under a new name.</description>
 <wire x1="35.28" y1="36.76" x2="27.66" y2="34.22" width="0" layer="19" extent="1-1"/>
 <wire x1="27.8788" y1="61.4506" x2="35.28" y2="36.76" width="0" layer="19" extent="1-1"/>
 <wire x1="7.13" y1="72.53" x2="27.8788" y2="61.4506" width="0" layer="19" extent="1-1"/>
-<wire x1="6.43" y1="-30.79" x2="5.61" y2="3.43" width="0" layer="19" extent="1-1"/>
+<wire x1="51.78" y1="38.6" x2="5.61" y2="3.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="J4" pad="1"/>
@@ -1258,7 +1258,7 @@ design rules under a new name.</description>
 <wire x1="35.28" y1="31.68" x2="35.28" y2="34.22" width="0" layer="19" extent="1-1"/>
 <wire x1="23.64" y1="70.53" x2="27.66" y2="36.76" width="0" layer="19" extent="1-1"/>
 <wire x1="4.59" y1="72.53" x2="23.64" y2="70.53" width="0" layer="19" extent="1-1"/>
-<wire x1="3.89" y1="-30.79" x2="31.28" y2="5.9" width="0" layer="19" extent="1-1"/>
+<wire x1="49.24" y1="38.6" x2="31.28" y2="5.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U1" pad="10"/>
@@ -1450,14 +1450,14 @@ design rules under a new name.</description>
 <contactref element="U1" pad="28"/>
 <contactref element="JP2" pad="1"/>
 <wire x1="35.28" y1="52" x2="75.62" y2="61.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.19" y1="-30.79" x2="35.28" y2="52" width="0" layer="19" extent="1-1"/>
+<wire x1="44.16" y1="38.6" x2="35.28" y2="52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U$3" pad="J2.2"/>
 <contactref element="U1" pad="27"/>
 <contactref element="JP2" pad="2"/>
 <wire x1="35.28" y1="49.46" x2="75.62" y2="58.69" width="0" layer="19" extent="1-1"/>
-<wire x1="1.35" y1="-30.79" x2="35.28" y2="49.46" width="0" layer="19" extent="1-1"/>
+<wire x1="46.7" y1="38.6" x2="35.28" y2="49.46" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

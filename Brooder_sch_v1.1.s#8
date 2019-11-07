@@ -11125,8 +11125,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
 <part name="U$3" library="diy-modules-1.8.0" deviceset="RTC-DS3231-AT24C32" device=""/>
-<part name="12V_GSM" library="SparkFun-Connectors" deviceset="CONN_02" device="5MM"/>
 <part name="12V_SYS" library="adafruit" deviceset="1X2" device="-3.5MM"/>
+<part name="12V_GSM" library="adafruit" deviceset="1X2" device="-3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -11314,11 +11314,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <attribute name="NAME" x="10.16" y="-20.828" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="U$3" gate="G$1" x="38.1" y="-48.26"/>
-<instance part="12V_GSM" gate="G$1" x="-71.12" y="109.22" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="-73.66" y="114.046" size="1.778" layer="96" font="vector" rot="MR180"/>
-<attribute name="NAME" x="-73.66" y="103.632" size="1.778" layer="95" font="vector" rot="MR180"/>
-</instance>
 <instance part="12V_SYS" gate="G$1" x="-73.66" y="60.96" rot="MR0"/>
+<instance part="12V_GSM" gate="G$1" x="-68.58" y="106.68" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -11330,9 +11327,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="U$2" gate="G$1" pin="IN(-VE)"/>
 <wire x1="-60.96" y1="106.68" x2="-38.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="106.68" x2="-38.1" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="12V_GSM" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="106.68" x2="-60.96" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-60.96" y="106.68"/>
+<pinref part="12V_GSM" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -11863,9 +11860,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="111.76" x2="-58.42" y2="116.84" width="0.1524" layer="91"/>
 <label x="-58.42" y="111.76" size="1.778" layer="95" rot="R90"/>
-<pinref part="12V_GSM" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="109.22" x2="-60.96" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="109.22" x2="-60.96" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="12V_GSM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="12V_S_SIM" class="0">
