@@ -1220,6 +1220,12 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-09327" x="5" y="-241" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$6" library="SIM800LMODULE" package="SIM800LMODULE" value="SIM800LMODULE" x="9" y="-263"/>
+<element name="R7" library="SparkFun-Resistors" package="AXIAL-0.3" value="680" x="5" y="-288">
+<attribute name="PROD_ID" value="RES-09327" x="5" y="-288" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R8" library="SparkFun-Resistors" package="AXIAL-0.3" value="680" x="5" y="-307">
+<attribute name="PROD_ID" value="RES-09327" x="5" y="-307" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1421,8 +1427,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="TX">
 <contactref element="U1" pad="25"/>
-<contactref element="U$6" pad="RX"/>
-<wire x1="-1.5" y1="-264.5" x2="35.28" y2="44.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="26"/>
@@ -1537,6 +1541,19 @@ design rules under a new name.</description>
 <contactref element="U$6" pad="VCC"/>
 <contactref element="U$2" pad="OUT(+VE)"/>
 <wire x1="-1.5" y1="-259.5" x2="97.2" y2="25.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="R7" pad="P$2"/>
+<contactref element="U$6" pad="RX"/>
+<contactref element="R8" pad="P$2"/>
+<wire x1="8.81" y1="-288" x2="8.81" y2="-307" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.5" y1="-264.5" x2="8.81" y2="-288" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="R8" pad="P$1"/>
+</signal>
+<signal name="N$11">
+<contactref element="R7" pad="P$1"/>
 </signal>
 </signals>
 </board>
