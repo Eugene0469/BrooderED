@@ -8233,14 +8233,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </net>
 <net name="D4" class="0">
 <segment>
-<pinref part="U1" gate="U1" pin="PD5(T1)"/>
-<wire x1="76.2" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
-<label x="83.82" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="11"/>
 <wire x1="210.82" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
 <label x="195.58" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="PD4(XCK/T0)"/>
+<wire x1="76.2" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="83.82" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -8319,13 +8319,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="177.8" y1="10.16" x2="185.42" y2="10.16" width="0.1524" layer="91"/>
 <label x="185.42" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SS" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="PB2(SS/OC1B)"/>
-<wire x1="76.2" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
-<label x="83.82" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DS2" class="0">
@@ -8457,8 +8450,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </sheets>
 <errors>
 <approved hash="113,1,-0.835659,76.2,Q1,,,,,"/>
-<approved hash="113,1,155.617,58.2574,1602_LCD,,,,,"/>
-<approved hash="113,1,155.617,12.5374,FTDI,,,,,"/>
 </errors>
 </schematic>
 </drawing>
